@@ -1,16 +1,10 @@
 import Vue from 'vue'
-import VueStripeMenu from 'vue-stripe-menu'
-import Vuesax from 'vuesax'
 
-// Import styles
-import 'vue-stripe-menu/dist/vue-stripe-menu.css'
-import 'vuesax/dist/vuesax.css' 
 
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
-Vue.use(VueStripeMenu)
-Vue.use(Vuesax)
+
 Vue.use(VueRouter)
 
 const routes = [
