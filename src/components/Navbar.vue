@@ -1,24 +1,20 @@
 <template>
-  <v-card>
+  <div id="Nav">
+    <v-card
+    class="mx-auto"
+    max-width="60%"
+    outlined
+    shaped
+    elevation="20">
     <v-toolbar
-      color="deep-purple accent-4"
+      color="deep-grey accent-4"
       dark
-      flat
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Page title</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-
+      
+        <!-- <router-link to="/SecondPage">
+          <button>SecondPage</button>
+        </router-link> -->
+      <!--Link Component -->  
       <template v-slot:extension>
         <v-tabs
           v-model="currentItem"
@@ -101,6 +97,7 @@
       </v-tab-item>
     </v-tabs-items>
   </v-card>
+  </div>
 </template>
 
 <script>
@@ -131,3 +128,8 @@
     },
   }
 </script>
+
+<style scoped>
+  #Nav {
+  }
+</style>
